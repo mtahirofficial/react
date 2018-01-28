@@ -1,0 +1,979 @@
+install webpack : npm install webpack
+install react : npm install react
+
+
+F:\ClassWork 0121>webpack index.jsx outpu.js
+^CTerminate batch job (Y/N)? y
+
+F:\ClassWork 0121>webpack index.jsx output.js
+Hash: 44f7405540863828f7aa
+Version: webpack 3.10.0
+Time: 107ms
+    Asset     Size  Chunks             Chunk Names
+output.js  2.64 kB       0  [emitted]  main
+   [0] ./index.jsx 26 bytes {0} [built]
+
+ERROR in ./index.jsx
+Module not found: Error: Can't resolve 'react' in 'F:\ClassWork 0121'
+ @ ./index.jsx 1:0-26
+
+F:\ClassWork 0121>npm install react
+npm WARN saveError ENOENT: no such file or directory, open 'F:\ClassWork 0121\package.json'
+npm notice created a lockfile as package-lock.json. You should commit this file.
+npm WARN enoent ENOENT: no such file or directory, open 'F:\ClassWork 0121\package.json'
+npm WARN ClassWork 0121 No description
+npm WARN ClassWork 0121 No repository field.
+npm WARN ClassWork 0121 No README data
+npm WARN ClassWork 0121 No license field.
+
++ react@16.2.0
+added 17 packages in 6.328s
+
+F:\ClassWork 0121>webpack index.jsx output.js
+Hash: b8f42437991a8339beed
+Version: webpack 3.10.0
+Time: 366ms
+    Asset     Size  Chunks             Chunk Names
+output.js  70.5 kB       0  [emitted]  main
+   [6] ./index.jsx 128 bytes {0} [built]
+    + 11 hidden modules
+
+F:\ClassWork 0121>npm install react-dom
+npm WARN saveError ENOENT: no such file or directory, open 'F:\ClassWork 0121\package.json'
+npm WARN enoent ENOENT: no such file or directory, open 'F:\ClassWork 0121\package.json'
+npm WARN ClassWork 0121 No description
+npm WARN ClassWork 0121 No repository field.
+npm WARN ClassWork 0121 No README data
+npm WARN ClassWork 0121 No license field.
+
++ react-dom@16.2.0
+added 1 package in 2.16s
+
+F:\ClassWork 0121>webpack index.jsx output.js
+Hash: 51d887d468d950945ff7
+Version: webpack 3.10.0
+Time: 546ms
+    Asset    Size  Chunks                    Chunk Names
+output.js  727 kB       0  [emitted]  [big]  main
+  [14] ./index.jsx 163 bytes {0} [built]
+    + 26 hidden modules
+
+F:\ClassWork 0121>webpack index.jsx output.js
+Hash: 6ad37bf5185707cb620b
+Version: webpack 3.10.0
+Time: 43ms
+    Asset    Size  Chunks             Chunk Names
+output.js  2.7 kB       0  [emitted]  main
+   [0] ./index.jsx 225 bytes {0} [built] [failed] [1 error]
+
+ERROR in ./index.jsx
+Module parse failed: Unexpected token (11:15)
+You may need an appropriate loader to handle this file type.
+|     render(){
+|
+|         return <h1>This is our 1st Component</h1>;
+|     }
+|
+
+F:\ClassWork 0121>npm install bable-loader
+npm WARN saveError ENOENT: no such file or directory, open 'F:\ClassWork 0121\package.json'
+npm WARN enoent ENOENT: no such file or directory, open 'F:\ClassWork 0121\package.json'
+npm WARN ClassWork 0121 No description
+npm WARN ClassWork 0121 No repository field.
+npm WARN ClassWork 0121 No README data
+npm WARN ClassWork 0121 No license field.
+
++ bable-loader@0.0.1-security
+added 1 package in 1.97s
+
+F:\ClassWork 0121>webpack
+Invalid configuration object. Webpack has been initialised using a configuration object that does not match the API schema.
+ - configuration.output.path: The provided value "./" is not an absolute path!
+   -> The output directory as **absolute path** (required).
+
+F:\ClassWork 0121>webpack
+Hash: fe7b9c9ddd0df47c7294
+Version: webpack 3.10.0
+Time: 43ms
+
+ERROR in Entry module not found: Error: Can't resolve 'bable-loader' in 'F:\ClassWork 0121'
+
+F:\ClassWork 0121>npm install bable-core
+npm ERR! code E404
+npm ERR! 404 Not Found: bable-core@latest
+
+npm ERR! A complete log of this run can be found in:
+npm ERR!     C:\Users\MT83\AppData\Roaming\npm-cache\_logs\2018-01-21T12_32_14_694Z-debug.log
+
+F:\ClassWork 0121>webpack
+Hash: fe7b9c9ddd0df47c7294
+Version: webpack 3.10.0
+Time: 31ms
+
+ERROR in Entry module not found: Error: Can't resolve 'bable-loader' in 'F:\ClassWork 0121'
+
+F:\ClassWork 0121>npm install bable-loader
+npm WARN saveError ENOENT: no such file or directory, open 'F:\ClassWork 0121\package.json'
+npm WARN enoent ENOENT: no such file or directory, open 'F:\ClassWork 0121\package.json'
+npm WARN ClassWork 0121 No description
+npm WARN ClassWork 0121 No repository field.
+npm WARN ClassWork 0121 No README data
+npm WARN ClassWork 0121 No license field.
+
++ bable-loader@0.0.1-security
+updated 1 package in 1.134s
+
+F:\ClassWork 0121>webpack
+Hash: fe7b9c9ddd0df47c7294
+Version: webpack 3.10.0
+Time: 30ms
+
+ERROR in Entry module not found: Error: Can't resolve 'bable-loader' in 'F:\ClassWork 0121'
+
+F:\ClassWork 0121>npm install babel-core
+npm WARN saveError ENOENT: no such file or directory, open 'F:\ClassWork 0121\package.json'
+npm WARN enoent ENOENT: no such file or directory, open 'F:\ClassWork 0121\package.json'
+npm WARN ClassWork 0121 No description
+npm WARN ClassWork 0121 No repository field.
+npm WARN ClassWork 0121 No README data
+npm WARN ClassWork 0121 No license field.
+
++ babel-core@6.26.0
+added 50 packages in 14.692s
+
+F:\ClassWork 0121>npm install babel-loader
+npm WARN saveError ENOENT: no such file or directory, open 'F:\ClassWork 0121\package.json'
+npm WARN enoent ENOENT: no such file or directory, open 'F:\ClassWork 0121\package.json'
+npm WARN babel-loader@7.1.2 requires a peer of webpack@2 || 3 but none is installed. You must install peer dependencies yourself.
+npm WARN ClassWork 0121 No description
+npm WARN ClassWork 0121 No repository field.
+npm WARN ClassWork 0121 No README data
+npm WARN ClassWork 0121 No license field.
+
++ babel-loader@7.1.2
+added 15 packages in 5.734s
+
+F:\ClassWork 0121>webpack
+Hash: ed8e740ddb5a9a314bee
+Version: webpack 3.10.0
+Time: 500ms
+    Asset     Size  Chunks             Chunk Names
+output.js  3.84 kB       0  [emitted]  main
+   [0] ./index.jsx 1.37 kB {0} [built] [failed] [1 error]
+
+ERROR in ./index.jsx
+Module build failed: Error: Couldn't find preset "es2015" relative to directory "F:\\ClassWork 0121"
+    at F:\ClassWork 0121\node_modules\babel-core\lib\transformation\file\options\option-manager.js:293:19
+    at Array.map (<anonymous>)
+    at OptionManager.resolvePresets (F:\ClassWork 0121\node_modules\babel-core\lib\transformation\file\options\option-manager.js:275:20)
+    at OptionManager.mergePresets (F:\ClassWork 0121\node_modules\babel-core\lib\transformation\file\options\option-manager.js:264:10)
+    at OptionManager.mergeOptions (F:\ClassWork 0121\node_modules\babel-core\lib\transformation\file\options\option-manager.js:249:14)
+    at OptionManager.init (F:\ClassWork 0121\node_modules\babel-core\lib\transformation\file\options\option-manager.js:368:12)
+    at File.initOptions (F:\ClassWork 0121\node_modules\babel-core\lib\transformation\file\index.js:212:65)
+    at new File (F:\ClassWork 0121\node_modules\babel-core\lib\transformation\file\index.js:135:24)
+    at Pipeline.transform (F:\ClassWork 0121\node_modules\babel-core\lib\transformation\pipeline.js:46:16)
+    at transpile (F:\ClassWork 0121\node_modules\babel-loader\lib\index.js:50:20)
+    at Object.module.exports (F:\ClassWork 0121\node_modules\babel-loader\lib\index.js:175:20)
+
+F:\ClassWork 0121>npm install babel-preset-2015
+npm ERR! code E404
+npm ERR! 404 Not Found: babel-preset-2015@latest
+
+npm ERR! A complete log of this run can be found in:
+npm ERR!     C:\Users\MT83\AppData\Roaming\npm-cache\_logs\2018-01-21T12_40_25_013Z-debug.log
+
+F:\ClassWork 0121>webpack
+Hash: ed8e740ddb5a9a314bee
+Version: webpack 3.10.0
+Time: 447ms
+    Asset     Size  Chunks             Chunk Names
+output.js  3.84 kB       0  [emitted]  main
+   [0] ./index.jsx 1.37 kB {0} [built] [failed] [1 error]
+
+ERROR in ./index.jsx
+Module build failed: Error: Couldn't find preset "es2015" relative to directory "F:\\ClassWork 0121"
+    at F:\ClassWork 0121\node_modules\babel-core\lib\transformation\file\options\option-manager.js:293:19
+    at Array.map (<anonymous>)
+    at OptionManager.resolvePresets (F:\ClassWork 0121\node_modules\babel-core\lib\transformation\file\options\option-manager.js:275:20)
+    at OptionManager.mergePresets (F:\ClassWork 0121\node_modules\babel-core\lib\transformation\file\options\option-manager.js:264:10)
+    at OptionManager.mergeOptions (F:\ClassWork 0121\node_modules\babel-core\lib\transformation\file\options\option-manager.js:249:14)
+    at OptionManager.init (F:\ClassWork 0121\node_modules\babel-core\lib\transformation\file\options\option-manager.js:368:12)
+    at File.initOptions (F:\ClassWork 0121\node_modules\babel-core\lib\transformation\file\index.js:212:65)
+    at new File (F:\ClassWork 0121\node_modules\babel-core\lib\transformation\file\index.js:135:24)
+    at Pipeline.transform (F:\ClassWork 0121\node_modules\babel-core\lib\transformation\pipeline.js:46:16)
+    at transpile (F:\ClassWork 0121\node_modules\babel-loader\lib\index.js:50:20)
+    at Object.module.exports (F:\ClassWork 0121\node_modules\babel-loader\lib\index.js:175:20)
+
+F:\ClassWork 0121>npm install babel-preset-es2015
+npm WARN deprecated babel-preset-es2015@6.24.1: ??  Thanks for using Babel: we recommend using babel-preset-env now: please read babeljs.io/env to update!
+npm WARN saveError ENOENT: no such file or directory, open 'F:\ClassWork 0121\package.json'
+npm WARN enoent ENOENT: no such file or directory, open 'F:\ClassWork 0121\package.json'
+npm WARN babel-loader@7.1.2 requires a peer of webpack@2 || 3 but none is installed. You must install peer dependencies yourself.
+npm WARN ClassWork 0121 No description
+npm WARN ClassWork 0121 No repository field.
+npm WARN ClassWork 0121 No README data
+npm WARN ClassWork 0121 No license field.
+
++ babel-preset-es2015@6.24.1
+added 40 packages in 6.455s
+
+F:\ClassWork 0121>webpack
+Hash: 1ec3f9b2bb31d3311b94
+Version: webpack 3.10.0
+Time: 579ms
+    Asset     Size  Chunks             Chunk Names
+output.js  4.79 kB       0  [emitted]  main
+   [0] ./index.jsx 2.32 kB {0} [built] [failed] [1 error]
+
+ERROR in ./index.jsx
+Module build failed: ReferenceError: [BABEL] F:\ClassWork 0121\index.jsx: Unknown option: F:\ClassWork 0121\node_modules\react\index.js.Children. Check out http://babeljs.io/docs/usage/options/ for more information about options.
+
+A common cause of this error is the presence of a configuration options object without the corresponding preset name. Example:
+
+Invalid:
+  `{ presets: [{option: value}] }`
+Valid:
+  `{ presets: [['presetName', {option: value}]] }`
+
+For more detailed information on preset configuration, please see http://babeljs.io/docs/plugins/#pluginpresets-options. (While processing preset: "F:\\ClassWork 0121\\node_modules\\react\\index.js")
+    at Logger.error (F:\ClassWork 0121\node_modules\babel-core\lib\transformation\file\logger.js:41:11)
+    at OptionManager.mergeOptions (F:\ClassWork 0121\node_modules\babel-core\lib\transformation\file\options\option-manager.js:226:20)
+    at F:\ClassWork 0121\node_modules\babel-core\lib\transformation\file\options\option-manager.js:265:14
+    at F:\ClassWork 0121\node_modules\babel-core\lib\transformation\file\options\option-manager.js:323:22
+    at Array.map (<anonymous>)
+    at OptionManager.resolvePresets (F:\ClassWork 0121\node_modules\babel-core\lib\transformation\file\options\option-manager.js:275:20)
+    at OptionManager.mergePresets (F:\ClassWork 0121\node_modules\babel-core\lib\transformation\file\options\option-manager.js:264:10)
+    at OptionManager.mergeOptions (F:\ClassWork 0121\node_modules\babel-core\lib\transformation\file\options\option-manager.js:249:14)
+    at OptionManager.init (F:\ClassWork 0121\node_modules\babel-core\lib\transformation\file\options\option-manager.js:368:12)
+    at File.initOptions (F:\ClassWork 0121\node_modules\babel-core\lib\transformation\file\index.js:212:65)
+    at new File (F:\ClassWork 0121\node_modules\babel-core\lib\transformation\file\index.js:135:24)
+    at Pipeline.transform (F:\ClassWork 0121\node_modules\babel-core\lib\transformation\pipeline.js:46:16)
+    at transpile (F:\ClassWork 0121\node_modules\babel-loader\lib\index.js:50:20)
+    at Object.module.exports (F:\ClassWork 0121\node_modules\babel-loader\lib\index.js:175:20)
+
+F:\ClassWork 0121>npm install babel-loader
+npm WARN saveError ENOENT: no such file or directory, open 'F:\ClassWork 0121\package.json'
+npm WARN enoent ENOENT: no such file or directory, open 'F:\ClassWork 0121\package.json'
+npm WARN babel-loader@7.1.2 requires a peer of webpack@2 || 3 but none is installed. You must install peer dependencies yourself.
+npm WARN ClassWork 0121 No description
+npm WARN ClassWork 0121 No repository field.
+npm WARN ClassWork 0121 No README data
+npm WARN ClassWork 0121 No license field.
+
++ babel-loader@7.1.2
+updated 1 package in 1.472s
+
+F:\ClassWork 0121>npm install babel-core
+npm WARN saveError ENOENT: no such file or directory, open 'F:\ClassWork 0121\package.json'
+npm WARN enoent ENOENT: no such file or directory, open 'F:\ClassWork 0121\package.json'
+npm WARN babel-loader@7.1.2 requires a peer of webpack@2 || 3 but none is installed. You must install peer dependencies yourself.
+npm WARN ClassWork 0121 No description
+npm WARN ClassWork 0121 No repository field.
+npm WARN ClassWork 0121 No README data
+npm WARN ClassWork 0121 No license field.
+
++ babel-core@6.26.0
+updated 1 package in 1.524s
+
+F:\ClassWork 0121>npm install babel-preset-es2015
+npm WARN deprecated babel-preset-es2015@6.24.1: ??  Thanks for using Babel: we recommend using babel-preset-env now: please read babeljs.io/env to update!
+npm WARN saveError ENOENT: no such file or directory, open 'F:\ClassWork 0121\package.json'
+npm WARN enoent ENOENT: no such file or directory, open 'F:\ClassWork 0121\package.json'
+npm WARN babel-loader@7.1.2 requires a peer of webpack@2 || 3 but none is installed. You must install peer dependencies yourself.
+npm WARN ClassWork 0121 No description
+npm WARN ClassWork 0121 No repository field.
+npm WARN ClassWork 0121 No README data
+npm WARN ClassWork 0121 No license field.
+
++ babel-preset-es2015@6.24.1
+updated 1 package in 1.536s
+
+F:\ClassWork 0121>webpack
+Hash: 1ec3f9b2bb31d3311b94
+Version: webpack 3.10.0
+Time: 569ms
+    Asset     Size  Chunks             Chunk Names
+output.js  4.79 kB       0  [emitted]  main
+   [0] ./index.jsx 2.32 kB {0} [built] [failed] [1 error]
+
+ERROR in ./index.jsx
+Module build failed: ReferenceError: [BABEL] F:\ClassWork 0121\index.jsx: Unknown option: F:\ClassWork 0121\node_modules\react\index.js.Children. Check out http://babeljs.io/docs/usage/options/ for more information about options.
+
+A common cause of this error is the presence of a configuration options object without the corresponding preset name. Example:
+
+Invalid:
+  `{ presets: [{option: value}] }`
+Valid:
+  `{ presets: [['presetName', {option: value}]] }`
+
+For more detailed information on preset configuration, please see http://babeljs.io/docs/plugins/#pluginpresets-options. (While processing preset: "F:\\ClassWork 0121\\node_modules\\react\\index.js")
+    at Logger.error (F:\ClassWork 0121\node_modules\babel-core\lib\transformation\file\logger.js:41:11)
+    at OptionManager.mergeOptions (F:\ClassWork 0121\node_modules\babel-core\lib\transformation\file\options\option-manager.js:226:20)
+    at F:\ClassWork 0121\node_modules\babel-core\lib\transformation\file\options\option-manager.js:265:14
+    at F:\ClassWork 0121\node_modules\babel-core\lib\transformation\file\options\option-manager.js:323:22
+    at Array.map (<anonymous>)
+    at OptionManager.resolvePresets (F:\ClassWork 0121\node_modules\babel-core\lib\transformation\file\options\option-manager.js:275:20)
+    at OptionManager.mergePresets (F:\ClassWork 0121\node_modules\babel-core\lib\transformation\file\options\option-manager.js:264:10)
+    at OptionManager.mergeOptions (F:\ClassWork 0121\node_modules\babel-core\lib\transformation\file\options\option-manager.js:249:14)
+    at OptionManager.init (F:\ClassWork 0121\node_modules\babel-core\lib\transformation\file\options\option-manager.js:368:12)
+    at File.initOptions (F:\ClassWork 0121\node_modules\babel-core\lib\transformation\file\index.js:212:65)
+    at new File (F:\ClassWork 0121\node_modules\babel-core\lib\transformation\file\index.js:135:24)
+    at Pipeline.transform (F:\ClassWork 0121\node_modules\babel-core\lib\transformation\pipeline.js:46:16)
+    at transpile (F:\ClassWork 0121\node_modules\babel-loader\lib\index.js:50:20)
+    at Object.module.exports (F:\ClassWork 0121\node_modules\babel-loader\lib\index.js:175:20)
+
+F:\ClassWork 0121>
+
+F:\ClassWork 0121>webpack
+Hash: 1ec3f9b2bb31d3311b94
+Version: webpack 3.10.0
+Time: 569ms
+    Asset     Size  Chunks             Chunk Names
+output.js  4.79 kB       0  [emitted]  main
+   [0] ./index.jsx 2.32 kB {0} [built] [failed] [1 error]
+
+ERROR in ./index.jsx
+Module build failed: ReferenceError: [BABEL] F:\ClassWork 0121\index.jsx: Unknown option: F:\ClassWork 0121\node_modules\react\index.js.Children. Check out http://babeljs.io/docs/usage/options/ for more information about options.
+
+A common cause of this error is the presence of a configuration options object without the corresponding preset name. Example:
+
+Invalid:
+  `{ presets: [{option: value}] }`
+Valid:
+  `{ presets: [['presetName', {option: value}]] }`
+
+For more detailed information on preset configuration, please see http://babeljs.io/docs/plugins/#pluginpresets-options. (While processing preset: "F:\\ClassWork 0121\\node_modules\\react\\index.js")
+    at Logger.error (F:\ClassWork 0121\node_modules\babel-core\lib\transformation\file\logger.js:41:11)
+    at OptionManager.mergeOptions (F:\ClassWork 0121\node_modules\babel-core\lib\transformation\file\options\option-manager.js:226:20)
+    at F:\ClassWork 0121\node_modules\babel-core\lib\transformation\file\options\option-manager.js:265:14
+    at F:\ClassWork 0121\node_modules\babel-core\lib\transformation\file\options\option-manager.js:323:22
+    at Array.map (<anonymous>)
+    at OptionManager.resolvePresets (F:\ClassWork 0121\node_modules\babel-core\lib\transformation\file\options\option-manager.js:275:20)
+    at OptionManager.mergePresets (F:\ClassWork 0121\node_modules\babel-core\lib\transformation\file\options\option-manager.js:264:10)
+    at OptionManager.mergeOptions (F:\ClassWork 0121\node_modules\babel-core\lib\transformation\file\options\option-manager.js:249:14)
+    at OptionManager.init (F:\ClassWork 0121\node_modules\babel-core\lib\transformation\file\options\option-manager.js:368:12)
+    at File.initOptions (F:\ClassWork 0121\node_modules\babel-core\lib\transformation\file\index.js:212:65)
+    at new File (F:\ClassWork 0121\node_modules\babel-core\lib\transformation\file\index.js:135:24)
+    at Pipeline.transform (F:\ClassWork 0121\node_modules\babel-core\lib\transformation\pipeline.js:46:16)
+    at transpile (F:\ClassWork 0121\node_modules\babel-loader\lib\index.js:50:20)
+    at Object.module.exports (F:\ClassWork 0121\node_modules\babel-loader\lib\index.js:175:20)
+
+F:\ClassWork 0121>webpack
+Hash: 1ec3f9b2bb31d3311b94
+Version: webpack 3.10.0
+Time: 494ms
+    Asset     Size  Chunks             Chunk Names
+output.js  4.79 kB       0  [emitted]  main
+   [0] ./index.jsx 2.32 kB {0} [built] [failed] [1 error]
+
+ERROR in ./index.jsx
+Module build failed: ReferenceError: [BABEL] F:\ClassWork 0121\index.jsx: Unknown option: F:\ClassWork 0121\node_modules\react\index.js.Children. Check out http://babeljs.io/docs/usage/options/ for more information about options.
+
+A common cause of this error is the presence of a configuration options object without the corresponding preset name. Example:
+
+Invalid:
+  `{ presets: [{option: value}] }`
+Valid:
+  `{ presets: [['presetName', {option: value}]] }`
+
+For more detailed information on preset configuration, please see http://babeljs.io/docs/plugins/#pluginpresets-options. (While processing preset: "F:\\ClassWork 0121\\node_modules\\react\\index.js")
+    at Logger.error (F:\ClassWork 0121\node_modules\babel-core\lib\transformation\file\logger.js:41:11)
+    at OptionManager.mergeOptions (F:\ClassWork 0121\node_modules\babel-core\lib\transformation\file\options\option-manager.js:226:20)
+    at F:\ClassWork 0121\node_modules\babel-core\lib\transformation\file\options\option-manager.js:265:14
+    at F:\ClassWork 0121\node_modules\babel-core\lib\transformation\file\options\option-manager.js:323:22
+    at Array.map (<anonymous>)
+    at OptionManager.resolvePresets (F:\ClassWork 0121\node_modules\babel-core\lib\transformation\file\options\option-manager.js:275:20)
+    at OptionManager.mergePresets (F:\ClassWork 0121\node_modules\babel-core\lib\transformation\file\options\option-manager.js:264:10)
+    at OptionManager.mergeOptions (F:\ClassWork 0121\node_modules\babel-core\lib\transformation\file\options\option-manager.js:249:14)
+    at OptionManager.init (F:\ClassWork 0121\node_modules\babel-core\lib\transformation\file\options\option-manager.js:368:12)
+    at File.initOptions (F:\ClassWork 0121\node_modules\babel-core\lib\transformation\file\index.js:212:65)
+    at new File (F:\ClassWork 0121\node_modules\babel-core\lib\transformation\file\index.js:135:24)
+    at Pipeline.transform (F:\ClassWork 0121\node_modules\babel-core\lib\transformation\pipeline.js:46:16)
+    at transpile (F:\ClassWork 0121\node_modules\babel-loader\lib\index.js:50:20)
+    at Object.module.exports (F:\ClassWork 0121\node_modules\babel-loader\lib\index.js:175:20)
+
+F:\ClassWork 0121>webpack
+F:\ClassWork 0121\webpack.config.js:13
+            }
+            ^
+
+SyntaxError: Unexpected token }
+    at createScript (vm.js:80:10)
+    at Object.runInThisContext (vm.js:152:10)
+    at Module._compile (module.js:605:28)
+    at Object.Module._extensions..js (module.js:652:10)
+    at Module.load (module.js:560:32)
+    at tryModuleLoad (module.js:503:12)
+    at Function.Module._load (module.js:495:3)
+    at Module.require (module.js:585:17)
+    at require (internal/module.js:11:18)
+    at requireConfig (c:\Users\MT83\AppData\Roaming\npm\node_modules\webpack\bin\convert-argv.js:97:18)
+
+F:\ClassWork 0121>webpack
+Hash: 1ec3f9b2bb31d3311b94
+Version: webpack 3.10.0
+Time: 596ms
+    Asset     Size  Chunks             Chunk Names
+output.js  4.79 kB       0  [emitted]  main
+   [0] ./index.jsx 2.32 kB {0} [built] [failed] [1 error]
+
+ERROR in ./index.jsx
+Module build failed: ReferenceError: [BABEL] F:\ClassWork 0121\index.jsx: Unknown option: F:\ClassWork 0121\node_modules\react\index.js.Children. Check out http://babeljs.io/docs/usage/options/ for more information about options.
+
+A common cause of this error is the presence of a configuration options object without the corresponding preset name. Example:
+
+Invalid:
+  `{ presets: [{option: value}] }`
+Valid:
+  `{ presets: [['presetName', {option: value}]] }`
+
+For more detailed information on preset configuration, please see http://babeljs.io/docs/plugins/#pluginpresets-options. (While processing preset: "F:\\ClassWork 0121\\node_modules\\react\\index.js")
+    at Logger.error (F:\ClassWork 0121\node_modules\babel-core\lib\transformation\file\logger.js:41:11)
+    at OptionManager.mergeOptions (F:\ClassWork 0121\node_modules\babel-core\lib\transformation\file\options\option-manager.js:226:20)
+    at F:\ClassWork 0121\node_modules\babel-core\lib\transformation\file\options\option-manager.js:265:14
+    at F:\ClassWork 0121\node_modules\babel-core\lib\transformation\file\options\option-manager.js:323:22
+    at Array.map (<anonymous>)
+    at OptionManager.resolvePresets (F:\ClassWork 0121\node_modules\babel-core\lib\transformation\file\options\option-manager.js:275:20)
+    at OptionManager.mergePresets (F:\ClassWork 0121\node_modules\babel-core\lib\transformation\file\options\option-manager.js:264:10)
+    at OptionManager.mergeOptions (F:\ClassWork 0121\node_modules\babel-core\lib\transformation\file\options\option-manager.js:249:14)
+    at OptionManager.init (F:\ClassWork 0121\node_modules\babel-core\lib\transformation\file\options\option-manager.js:368:12)
+    at File.initOptions (F:\ClassWork 0121\node_modules\babel-core\lib\transformation\file\index.js:212:65)
+    at new File (F:\ClassWork 0121\node_modules\babel-core\lib\transformation\file\index.js:135:24)
+    at Pipeline.transform (F:\ClassWork 0121\node_modules\babel-core\lib\transformation\pipeline.js:46:16)
+    at transpile (F:\ClassWork 0121\node_modules\babel-loader\lib\index.js:50:20)
+    at Object.module.exports (F:\ClassWork 0121\node_modules\babel-loader\lib\index.js:175:20)
+
+F:\ClassWork 0121>webpack
+Hash: 3c0bb912929873318af2
+Version: webpack 3.10.0
+Time: 50ms
+
+ERROR in Entry module not found: Error: Can't resolve 'index.jsx' in 'F:\ClassWork 0121'
+
+F:\ClassWork 0121>webpack
+Hash: 1ec3f9b2bb31d3311b94
+Version: webpack 3.10.0
+Time: 2212ms
+    Asset     Size  Chunks             Chunk Names
+output.js  4.79 kB       0  [emitted]  main
+   [0] ./index.jsx 2.32 kB {0} [built] [failed] [1 error]
+
+ERROR in ./index.jsx
+Module build failed: ReferenceError: [BABEL] F:\ClassWork 0121\index.jsx: Unknown option: F:\ClassWork 0121\node_modules\react\index.js.Children. Check out http://babeljs.io/docs/usage/options/ for more information about options.
+
+A common cause of this error is the presence of a configuration options object without the corresponding preset name. Example:
+
+Invalid:
+  `{ presets: [{option: value}] }`
+Valid:
+  `{ presets: [['presetName', {option: value}]] }`
+
+For more detailed information on preset configuration, please see http://babeljs.io/docs/plugins/#pluginpresets-options. (While processing preset: "F:\\ClassWork 0121\\node_modules\\react\\index.js")
+    at Logger.error (F:\ClassWork 0121\node_modules\babel-core\lib\transformation\file\logger.js:41:11)
+    at OptionManager.mergeOptions (F:\ClassWork 0121\node_modules\babel-core\lib\transformation\file\options\option-manager.js:226:20)
+    at F:\ClassWork 0121\node_modules\babel-core\lib\transformation\file\options\option-manager.js:265:14
+    at F:\ClassWork 0121\node_modules\babel-core\lib\transformation\file\options\option-manager.js:323:22
+    at Array.map (<anonymous>)
+    at OptionManager.resolvePresets (F:\ClassWork 0121\node_modules\babel-core\lib\transformation\file\options\option-manager.js:275:20)
+    at OptionManager.mergePresets (F:\ClassWork 0121\node_modules\babel-core\lib\transformation\file\options\option-manager.js:264:10)
+    at OptionManager.mergeOptions (F:\ClassWork 0121\node_modules\babel-core\lib\transformation\file\options\option-manager.js:249:14)
+    at OptionManager.init (F:\ClassWork 0121\node_modules\babel-core\lib\transformation\file\options\option-manager.js:368:12)
+    at File.initOptions (F:\ClassWork 0121\node_modules\babel-core\lib\transformation\file\index.js:212:65)
+    at new File (F:\ClassWork 0121\node_modules\babel-core\lib\transformation\file\index.js:135:24)
+    at Pipeline.transform (F:\ClassWork 0121\node_modules\babel-core\lib\transformation\pipeline.js:46:16)
+    at transpile (F:\ClassWork 0121\node_modules\babel-loader\lib\index.js:50:20)
+    at Object.module.exports (F:\ClassWork 0121\node_modules\babel-loader\lib\index.js:175:20)
+
+F:\ClassWork 0121>npm install babel-preset-react
+npm WARN saveError ENOENT: no such file or directory, open 'F:\ClassWork 0121\package.json'
+npm WARN enoent ENOENT: no such file or directory, open 'F:\ClassWork 0121\package.json'
+npm WARN babel-loader@7.1.2 requires a peer of webpack@2 || 3 but none is installed. You must install peer dependencies yourself.
+npm WARN ClassWork 0121 No description
+npm WARN ClassWork 0121 No repository field.
+npm WARN ClassWork 0121 No README data
+npm WARN ClassWork 0121 No license field.
+
++ babel-preset-react@6.24.1
+added 10 packages in 4.312s
+
+F:\ClassWork 0121>webpack
+Hash: a5f56e38782d6fc2ae6e
+Version: webpack 3.10.0
+Time: 1122ms
+    Asset    Size  Chunks                    Chunk Names
+output.js  729 kB       0  [emitted]  [big]  main
+  [14] ./index.jsx 2.49 kB {0} [built]
+    + 26 hidden modules
+
+F:\ClassWork 0121>webpack
+Hash: 52deec4893693bdb03f7
+Version: webpack 3.10.0
+Time: 1074ms
+    Asset    Size  Chunks                    Chunk Names
+output.js  729 kB       0  [emitted]  [big]  main
+  [14] ./index.jsx 2.54 kB {0} [built]
+  [27] ./style/style.css 169 bytes {0} [built] [failed] [1 error]
+    + 26 hidden modules
+
+ERROR in ./style/style.css
+Module parse failed: Unexpected token (1:0)
+You may need an appropriate loader to handle this file type.
+| .provinces{
+|     color: red
+| }
+ @ ./index.jsx 13:0-28
+
+F:\ClassWork 0121>npm install style-loader
+npm WARN saveError ENOENT: no such file or directory, open 'F:\ClassWork 0121\package.json'
+npm WARN enoent ENOENT: no such file or directory, open 'F:\ClassWork 0121\package.json'
+npm WARN babel-loader@7.1.2 requires a peer of webpack@2 || 3 but none is installed. You must install peer dependencies yourself.
+npm WARN ClassWork 0121 No description
+npm WARN ClassWork 0121 No repository field.
+npm WARN ClassWork 0121 No README data
+npm WARN ClassWork 0121 No license field.
+
++ style-loader@0.19.1
+added 7 packages in 3.117s
+
+F:\ClassWork 0121>webpack
+Hash: 52deec4893693bdb03f7
+Version: webpack 3.10.0
+Time: 1196ms
+    Asset    Size  Chunks                    Chunk Names
+output.js  729 kB       0  [emitted]  [big]  main
+  [14] ./index.jsx 2.54 kB {0} [built]
+  [27] ./style/style.css 169 bytes {0} [built] [failed] [1 error]
+    + 26 hidden modules
+
+ERROR in ./style/style.css
+Module parse failed: Unexpected token (1:0)
+You may need an appropriate loader to handle this file type.
+| .provinces{
+|     color: red
+| }
+ @ ./index.jsx 13:0-28
+
+F:\ClassWork 0121>npm install style-loader-react
+npm ERR! code E404
+npm ERR! 404 Not Found: style-loader-react@latest
+
+npm ERR! A complete log of this run can be found in:
+npm ERR!     C:\Users\MT83\AppData\Roaming\npm-cache\_logs\2018-01-21T13_30_35_532Z-debug.log
+
+F:\ClassWork 0121>webpack
+Hash: 52deec4893693bdb03f7
+Version: webpack 3.10.0
+Time: 1099ms
+    Asset    Size  Chunks                    Chunk Names
+output.js  729 kB       0  [emitted]  [big]  main
+  [14] ./index.jsx 2.54 kB {0} [built]
+  [27] ./style/style.css 169 bytes {0} [built] [failed] [1 error]
+    + 26 hidden modules
+
+ERROR in ./style/style.css
+Module parse failed: Unexpected token (1:0)
+You may need an appropriate loader to handle this file type.
+| .provinces{
+|     color: red
+| }
+ @ ./index.jsx 13:0-28
+
+F:\ClassWork 0121>npm install css-loader
+npm WARN saveError ENOENT: no such file or directory, open 'F:\ClassWork 0121\package.json'
+npm WARN enoent ENOENT: no such file or directory, open 'F:\ClassWork 0121\package.json'
+npm WARN babel-loader@7.1.2 requires a peer of webpack@2 || 3 but none is installed. You must install peer dependencies yourself.
+npm WARN ClassWork 0121 No description
+npm WARN ClassWork 0121 No repository field.
+npm WARN ClassWork 0121 No README data
+npm WARN ClassWork 0121 No license field.
+
++ css-loader@0.28.9
+added 135 packages in 21.704s
+
+F:\ClassWork 0121>webpack
+Hash: 52deec4893693bdb03f7
+Version: webpack 3.10.0
+Time: 1088ms
+    Asset    Size  Chunks                    Chunk Names
+output.js  729 kB       0  [emitted]  [big]  main
+  [14] ./index.jsx 2.54 kB {0} [built]
+  [27] ./style/style.css 169 bytes {0} [built] [failed] [1 error]
+    + 26 hidden modules
+
+ERROR in ./style/style.css
+Module parse failed: Unexpected token (1:0)
+You may need an appropriate loader to handle this file type.
+| .provinces{
+|     color: red
+| }
+ @ ./index.jsx 13:0-28
+
+F:\ClassWork 0121>webpack
+F:\ClassWork 0121\webpack.config.js:13
+            {
+            ^
+
+SyntaxError: Unexpected token {
+    at createScript (vm.js:80:10)
+    at Object.runInThisContext (vm.js:152:10)
+    at Module._compile (module.js:605:28)
+    at Object.Module._extensions..js (module.js:652:10)
+    at Module.load (module.js:560:32)
+    at tryModuleLoad (module.js:503:12)
+    at Function.Module._load (module.js:495:3)
+    at Module.require (module.js:585:17)
+    at require (internal/module.js:11:18)
+    at requireConfig (c:\Users\MT83\AppData\Roaming\npm\node_modules\webpack\bin\convert-argv.js:97:18)
+
+F:\ClassWork 0121>webpack
+Hash: 6f118e1e692bfc8481d7
+Version: webpack 3.10.0
+Time: 1509ms
+    Asset    Size  Chunks                    Chunk Names
+output.js  729 kB       0  [emitted]  [big]  main
+  [14] ./index.jsx 2.54 kB {0} [built]
+  [27] ./style/style.css 290 bytes {0} [built] [failed] [1 error]
+    + 26 hidden modules
+
+ERROR in ./style/style.css
+Module build failed: Unknown word (5:1)
+
+  3 | // load the styles
+  4 | var content = require("!!./style.css");
+> 5 | if(typeof content === 'string') content = [[module.id, content, '']];
+    | ^
+  6 | // Prepare cssTransformation
+  7 | var transform;
+  8 |
+
+ @ ./index.jsx 13:0-28
+
+F:\ClassWork 0121>webpack
+Hash: 1b08b245b6ebf0d391bc
+Version: webpack 3.10.0
+Time: 1469ms
+    Asset    Size  Chunks                    Chunk Names
+output.js  745 kB       0  [emitted]  [big]  main
+  [14] ./index.jsx 2.54 kB {0} [built]
+  [27] ./style/style.css 1.01 kB {0} [built]
+  [28] ./node_modules/css-loader!./style/style.css 288 bytes {0} [built]
+    + 29 hidden modules
+
+F:\ClassWork 0121>webpack
+Hash: bc046f5c968e8ca44524
+Version: webpack 3.10.0
+Time: 1467ms
+    Asset    Size  Chunks                    Chunk Names
+output.js  745 kB       0  [emitted]  [big]  main
+  [14] ./index.jsx 2.54 kB {0} [built]
+  [27] ./style/style.css 1.01 kB {0} [built]
+  [28] ./node_modules/css-loader!./style/style.css 284 bytes {0} [built]
+    + 29 hidden modules
+
+F:\ClassWork 0121>webpack
+Hash: f945d216152323dcbc66
+Version: webpack 3.10.0
+Time: 1409ms
+    Asset    Size  Chunks                    Chunk Names
+output.js  743 kB       0  [emitted]  [big]  main
+  [14] ./index.jsx 2.54 kB {0} [built]
+  [27] ./style/style.css 1.01 kB {0} [built]
+  [28] ./node_modules/css-loader!./style/style.css 184 bytes {0} [built] [failed] [1 error]
+    + 28 hidden modules
+
+ERROR in ./node_modules/css-loader!./style/style.css
+Module build failed: Missed semicolon (2:12)
+
+  1 | .provinces{
+> 2 |     color: red
+    |            ^
+  3 |     background-color: yellow;;
+  4 | }
+  5 |
+
+ @ ./style/style.css 4:14-74
+ @ ./index.jsx
+
+F:\ClassWork 0121>webpack
+Hash: 6b9b886da62eaf513603
+Version: webpack 3.10.0
+Time: 1439ms
+    Asset    Size  Chunks                    Chunk Names
+output.js  745 kB       0  [emitted]  [big]  main
+  [14] ./index.jsx 2.54 kB {0} [built]
+  [27] ./style/style.css 1.01 kB {0} [built]
+  [28] ./node_modules/css-loader!./style/style.css 318 bytes {0} [built]
+    + 29 hidden modules
+
+F:\ClassWork 0121>webpack
+Hash: f1c21d7cb802b8d7ce82
+Version: webpack 3.10.0
+Time: 1475ms
+    Asset    Size  Chunks                    Chunk Names
+output.js  745 kB       0  [emitted]  [big]  main
+  [14] ./index.jsx 2.54 kB {0} [built]
+  [27] ./style/style.css 1.01 kB {0} [built]
+  [28] ./node_modules/css-loader!./style/style.css 328 bytes {0} [built]
+    + 29 hidden modules
+
+F:\ClassWork 0121>webpack
+Hash: dfcaf14ec59050d7ce89
+Version: webpack 3.10.0
+Time: 1430ms
+    Asset    Size  Chunks                    Chunk Names
+output.js  745 kB       0  [emitted]  [big]  main
+  [14] ./index.jsx 2.54 kB {0} [built]
+  [27] ./style/style.css 1.01 kB {0} [built]
+  [28] ./node_modules/css-loader!./style/style.css 349 bytes {0} [built]
+    + 29 hidden modules
+
+F:\ClassWork 0121>webpack
+Hash: a1772dfee56cf2b848df
+Version: webpack 3.10.0
+Time: 1458ms
+    Asset    Size  Chunks                    Chunk Names
+output.js  745 kB       0  [emitted]  [big]  main
+  [14] ./index.jsx 2.54 kB {0} [built]
+  [27] ./style/style.css 1.01 kB {0} [built]
+  [28] ./node_modules/css-loader!./style/style.css 342 bytes {0} [built]
+    + 29 hidden modules
+
+F:\ClassWork 0121>webpack
+Hash: 6413967f896c76bad095
+Version: webpack 3.10.0
+Time: 1455ms
+    Asset    Size  Chunks                    Chunk Names
+output.js  745 kB       0  [emitted]  [big]  main
+  [14] ./index.jsx 2.54 kB {0} [built]
+  [27] ./style/style.css 1.01 kB {0} [built]
+  [28] ./node_modules/css-loader!./style/style.css 401 bytes {0} [built]
+    + 29 hidden modules
+
+F:\ClassWork 0121>webpack
+Hash: e459526856520bc8ec93
+Version: webpack 3.10.0
+Time: 1480ms
+    Asset    Size  Chunks                    Chunk Names
+output.js  745 kB       0  [emitted]  [big]  main
+  [14] ./index.jsx 2.54 kB {0} [built]
+  [27] ./style/style.css 1.01 kB {0} [built]
+  [28] ./node_modules/css-loader!./style/style.css 424 bytes {0} [built]
+    + 29 hidden modules
+
+F:\ClassWork 0121>webpack
+Hash: 6d80d5a6acc362d32863
+Version: webpack 3.10.0
+Time: 1483ms
+    Asset    Size  Chunks                    Chunk Names
+output.js  745 kB       0  [emitted]  [big]  main
+  [14] ./index.jsx 2.54 kB {0} [built]
+  [27] ./style/style.css 1.01 kB {0} [built]
+  [28] ./node_modules/css-loader!./style/style.css 431 bytes {0} [built]
+    + 29 hidden modules
+
+F:\ClassWork 0121>webpack
+Hash: 504f2b70e313e2a1985e
+Version: webpack 3.10.0
+Time: 1418ms
+    Asset    Size  Chunks                    Chunk Names
+output.js  745 kB       0  [emitted]  [big]  main
+  [14] ./index.jsx 2.54 kB {0} [built]
+  [27] ./style/style.css 1.01 kB {0} [built]
+  [28] ./node_modules/css-loader!./style/style.css 445 bytes {0} [built]
+    + 29 hidden modules
+
+F:\ClassWork 0121>webpack
+Hash: 15b94e0b2093f6801210
+Version: webpack 3.10.0
+Time: 1458ms
+    Asset    Size  Chunks                    Chunk Names
+output.js  745 kB       0  [emitted]  [big]  main
+  [14] ./index.jsx 2.54 kB {0} [built]
+  [27] ./style/style.css 1.01 kB {0} [built]
+  [28] ./node_modules/css-loader!./style/style.css 671 bytes {0} [built]
+    + 29 hidden modules
+
+F:\ClassWork 0121>webpack
+Hash: 51e1e30b191bd33171a7
+Version: webpack 3.10.0
+Time: 1403ms
+    Asset    Size  Chunks                    Chunk Names
+output.js  745 kB       0  [emitted]  [big]  main
+  [14] ./index.jsx 2.54 kB {0} [built]
+  [27] ./style/style.css 1.01 kB {0} [built]
+  [28] ./node_modules/css-loader!./style/style.css 678 bytes {0} [built]
+    + 29 hidden modules
+
+F:\ClassWork 0121>webpack
+Hash: 79b76e5f1e6dc23ac048
+Version: webpack 3.10.0
+Time: 1383ms
+    Asset    Size  Chunks                    Chunk Names
+output.js  745 kB       0  [emitted]  [big]  main
+  [14] ./index.jsx 2.54 kB {0} [built]
+  [27] ./style/style.css 1.01 kB {0} [built]
+  [28] ./node_modules/css-loader!./style/style.css 678 bytes {0} [built]
+    + 29 hidden modules
+
+F:\ClassWork 0121>webpack
+Hash: 89a1b3ed2dda44610dd2
+Version: webpack 3.10.0
+Time: 1386ms
+    Asset    Size  Chunks                    Chunk Names
+output.js  745 kB       0  [emitted]  [big]  main
+  [14] ./index.jsx 2.54 kB {0} [built]
+  [27] ./style/style.css 1.01 kB {0} [built]
+  [28] ./node_modules/css-loader!./style/style.css 670 bytes {0} [built]
+    + 29 hidden modules
+
+F:\ClassWork 0121>webpack
+Hash: 89a1b3ed2dda44610dd2
+Version: webpack 3.10.0
+Time: 1458ms
+    Asset    Size  Chunks                    Chunk Names
+output.js  745 kB       0  [emitted]  [big]  main
+  [14] ./index.jsx 2.54 kB {0} [built]
+  [27] ./style/style.css 1.01 kB {0} [built]
+  [28] ./node_modules/css-loader!./style/style.css 670 bytes {0} [built]
+    + 29 hidden modules
+
+F:\ClassWork 0121>webpack
+Hash: bff62cfbfb5977a36ce1
+Version: webpack 3.10.0
+Time: 1500ms
+    Asset    Size  Chunks                    Chunk Names
+output.js  746 kB       0  [emitted]  [big]  main
+  [14] ./index.jsx 3.33 kB {0} [built]
+  [27] ./style/style.css 1.01 kB {0} [built]
+  [28] ./node_modules/css-loader!./style/style.css 670 bytes {0} [built]
+    + 29 hidden modules
+
+F:\ClassWork 0121>webpack
+Hash: cb09a4e9694cd8d3b34e
+Version: webpack 3.10.0
+Time: 1494ms
+    Asset    Size  Chunks                    Chunk Names
+output.js  746 kB       0  [emitted]  [big]  main
+  [14] ./index.jsx 3.31 kB {0} [built]
+  [27] ./style/style.css 1.01 kB {0} [built]
+  [28] ./node_modules/css-loader!./style/style.css 670 bytes {0} [built]
+    + 29 hidden modules
+
+F:\ClassWork 0121>webpack
+Hash: 8aa4a21883c8f2657910
+Version: webpack 3.10.0
+Time: 1427ms
+    Asset    Size  Chunks                    Chunk Names
+output.js  746 kB       0  [emitted]  [big]  main
+  [14] ./index.jsx 3.31 kB {0} [built]
+  [27] ./style/style.css 1.01 kB {0} [built]
+  [28] ./node_modules/css-loader!./style/style.css 670 bytes {0} [built]
+    + 29 hidden modules
+
+F:\ClassWork 0121>webpack
+Hash: cbd6e3025aece7123b33
+Version: webpack 3.10.0
+Time: 588ms
+    Asset     Size  Chunks             Chunk Names
+output.js  3.46 kB       0  [emitted]  main
+   [0] ./index.jsx 991 bytes {0} [built] [failed] [1 error]
+
+ERROR in ./index.jsx
+Module build failed: SyntaxError: F:/ClassWork 0121/index.jsx: Expected corresponding JSX closing tag for <child> (23:12)
+
+  21 |                 <child>
+  22 |             <h1 className="province">This is our 1st Component</h1>
+> 23 |             </div>
+     |             ^
+  24 |
+  25 |
+  26 |
+
+
+F:\ClassWork 0121>webpack
+Hash: 65c020fb90114b839982
+Version: webpack 3.10.0
+Time: 588ms
+    Asset     Size  Chunks             Chunk Names
+output.js  3.48 kB       0  [emitted]  main
+   [0] ./index.jsx 1.01 kB {0} [built] [failed] [1 error]
+
+ERROR in ./index.jsx
+Module build failed: SyntaxError: F:/ClassWork 0121/index.jsx: Expected corresponding JSX closing tag for <child> (23:12)
+
+  21 |                 <child>
+  22 |             <h1 className="province">This is our 1st Component</h1>;
+> 23 |             </div>
+     |             ^
+  24 |
+  25 |
+  26 |
+
+
+F:\ClassWork 0121>webpack
+Hash: c494d60eedc0c9ea7bcf
+Version: webpack 3.10.0
+Time: 1474ms
+    Asset    Size  Chunks                    Chunk Names
+output.js  747 kB       0  [emitted]  [big]  main
+  [14] ./index.jsx 3.66 kB {0} [built]
+  [27] ./style/style.css 1.01 kB {0} [built]
+  [28] ./node_modules/css-loader!./style/style.css 670 bytes {0} [built]
+    + 29 hidden modules
+
+F:\ClassWork 0121>webpack
+Hash: 61d581f80a1f4336367d
+Version: webpack 3.10.0
+Time: 1431ms
+    Asset    Size  Chunks                    Chunk Names
+output.js  747 kB       0  [emitted]  [big]  main
+  [14] ./index.jsx 3.63 kB {0} [built]
+  [27] ./style/style.css 1.01 kB {0} [built]
+  [28] ./node_modules/css-loader!./style/style.css 797 bytes {0} [built]
+    + 29 hidden modules
+
+F:\ClassWork 0121>webpack
+Hash: 7478020cca36a18cd60b
+Version: webpack 3.10.0
+Time: 1499ms
+    Asset    Size  Chunks                    Chunk Names
+output.js  747 kB       0  [emitted]  [big]  main
+  [14] ./index.jsx 3.63 kB {0} [built]
+  [27] ./style/style.css 1.01 kB {0} [built]
+  [28] ./node_modules/css-loader!./style/style.css 891 bytes {0} [built]
+    + 29 hidden modules
+
+F:\ClassWork 0121>webpack
+Hash: 2d9d96eaeb7386a55e2f
+Version: webpack 3.10.0
+Time: 1451ms
+    Asset    Size  Chunks                    Chunk Names
+output.js  747 kB       0  [emitted]  [big]  main
+  [14] ./index.jsx 3.63 kB {0} [built]
+  [27] ./style/style.css 1.01 kB {0} [built]
+  [28] ./node_modules/css-loader!./style/style.css 891 bytes {0} [built]
+    + 29 hidden modules
+
+F:\ClassWork 0121>webpack
+Hash: 02d99a357ce08a8d818b
+Version: webpack 3.10.0
+Time: 1490ms
+    Asset    Size  Chunks                    Chunk Names
+output.js  747 kB       0  [emitted]  [big]  main
+  [14] ./index.jsx 3.63 kB {0} [built]
+  [27] ./style/style.css 1.01 kB {0} [built]
+  [28] ./node_modules/css-loader!./style/style.css 899 bytes {0} [built]
+    + 29 hidden modules
+
+F:\ClassWork 0121>webpack
+Hash: 84961aad912b8b1917f6
+Version: webpack 3.10.0
+Time: 1494ms
+    Asset    Size  Chunks                    Chunk Names
+output.js  747 kB       0  [emitted]  [big]  main
+  [14] ./index.jsx 3.63 kB {0} [built]
+  [27] ./style/style.css 1.01 kB {0} [built]
+  [28] ./node_modules/css-loader!./style/style.css 899 bytes {0} [built]
+    + 29 hidden modules
+
+F:\ClassWork 0121>

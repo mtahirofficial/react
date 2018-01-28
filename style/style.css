@@ -1,0 +1,55 @@
+.provinces{
+    color: red;
+}
+
+.country{
+    color: blue;
+}
+
+#rootElement{
+    color: green;
+    background-color: #00FF8E;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    display: Inline-block;
+    
+}
+
+/* #rootElement:hover{
+    color: yellow;
+    background-color:green;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    display: Inline-block;
+    animation-delay: 5s
+    
+} */
+
+button{
+    background-color: #286090;
+    color: lightskyblue;
+    width: 100px;
+    height: 50px;
+    border-radius: 5px;
+    border-color: #2e6da4;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-weight: 500;
+    cursor: pointer;
+}
+button:hover{
+    background-color: #114572;
+    color: #9DD4F6;
+    width: 100px;
+    height: 50px;
+    border-radius: 5px;
+    animation-delay: 3s;
+    border-color: #2e6da4;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+
+}
+
+.green-color{
+    color: blue;
+}
+
+.yellow-color{
+    color: red;
+}
